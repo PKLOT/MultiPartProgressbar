@@ -1,0 +1,3 @@
+include ':multiplepartprogressbar'
+include ':app'
+rootProject.name = "MultiplePartProgressbar"
