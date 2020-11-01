@@ -1,7 +1,0 @@
-<resources>
-    <declare-styleable name="MultipleProgressbarView">
-        <attr name="icon_resource" format="reference" />
-        <attr name="icon_radius" format="dimension" />
-        <attr name="progress_width" format="dimension" />
-    </declare-styleable>
-</resources>
