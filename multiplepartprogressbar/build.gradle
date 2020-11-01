@@ -42,6 +42,11 @@ dependencies {
     testImplementation 'junit:junit:4.13.1'
 }
 
+task androidSourcesJar(type: Jar) {
+    archiveClassifier.set('sources')
+    from android.sourceSets.main.java.srcDirs
+}
+
 def libraryGroupId = 'com.carterchen247'
 def libraryArtifactId = 'multiple-part-progressbar'
 def libraryVersion = '0.9.0'
@@ -51,6 +56,7 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
                 from components.release
+                artifact androidSourcesJar
                 groupId = libraryGroupId
                 artifactId = libraryArtifactId
                 version = libraryVersion
