@@ -1,9 +1,10 @@
-package com.carterchen247.multiplepartprogressbar
+package com.carterchen247.multiplepartprogressbar.demo
 
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.RectF
+import com.carterchen247.multiplepartprogressbar.MultiplePartProgressbarDelegate
 import com.carterchen247.multiplepartprogressbar.painter.Painter
 
 class ProgressBackgroundPainter(

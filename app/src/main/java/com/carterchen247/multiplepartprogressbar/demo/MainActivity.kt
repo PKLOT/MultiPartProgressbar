@@ -1,4 +1,4 @@
-package com.carterchen247.multiplepartprogressbar
+package com.carterchen247.multiplepartprogressbar.demo
 
 import android.animation.Animator
 import android.animation.ValueAnimator

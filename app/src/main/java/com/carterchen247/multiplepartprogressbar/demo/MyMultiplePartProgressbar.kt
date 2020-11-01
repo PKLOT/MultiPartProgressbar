@@ -1,7 +1,8 @@
-package com.carterchen247.multiplepartprogressbar
+package com.carterchen247.multiplepartprogressbar.demo
 
 import android.content.Context
 import android.util.AttributeSet
+import com.carterchen247.multiplepartprogressbar.MultiplePartProgressbar
 import com.carterchen247.multiplepartprogressbar.painter.Painter
 import com.carterchen247.multiplepartprogressbar.painter.ProgressIconPainter
 import com.carterchen247.multiplepartprogressbar.painter.ProgressPartPainter

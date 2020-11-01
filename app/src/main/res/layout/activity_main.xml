@@ -52,7 +52,7 @@
                 app:layout_constraintTop_toTopOf="@id/defaultProgressbar"
                 tools:ignore="HardcodedText,SmallSp" />
 
-            <com.carterchen247.multiplepartprogressbar.MyMultiplePartProgressbar
+            <com.carterchen247.multiplepartprogressbar.demo.MyMultiplePartProgressbar
                 android:id="@+id/customizedProgressbar"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
