@@ -12,13 +12,14 @@ import com.carterchen247.multiplepartprogressbar.painter.ProgressIconPainter
 import com.carterchen247.multiplepartprogressbar.painter.ProgressPartPainter
 import com.carterchen247.multiplepartprogressbar.part.ProgressPart
 import com.carterchen247.multiplepartprogressbar.part.ProgressPartConfig
+import com.carterchen247.multiplepartprogressbar.util.dp
 import kotlin.math.min
 
-open class MultipleProgressbarView @JvmOverloads constructor(
+open class MultiplePartProgressbar @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
-) : View(context, attrs, defStyleAttr), MultipleProgressbarViewDelegate {
+) : View(context, attrs, defStyleAttr), MultiplePartProgressbarDelegate {
 
     private var radius = 0f
     private val size = RectF()
@@ -33,8 +34,8 @@ open class MultipleProgressbarView @JvmOverloads constructor(
         typedArray.run {
             try {
                 iconResource = getResourceId(R.styleable.MultipleProgressbarView_icon_resource, 0)
-                iconRadius = getDimension(R.styleable.MultipleProgressbarView_icon_radius, 0f)
-                progressWidth = getDimension(R.styleable.MultipleProgressbarView_progress_width, 0f)
+                iconRadius = getDimension(R.styleable.MultipleProgressbarView_icon_radius, 5.dp.toFloat())
+                progressWidth = getDimension(R.styleable.MultipleProgressbarView_progress_width, 10.dp.toFloat())
             } finally {
                 recycle()
             }

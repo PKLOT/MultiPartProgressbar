@@ -6,7 +6,7 @@ import android.graphics.Paint
 import android.graphics.PointF
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.graphics.drawable.toBitmap
-import com.carterchen247.multiplepartprogressbar.MultipleProgressbarViewDelegate
+import com.carterchen247.multiplepartprogressbar.MultiplePartProgressbarDelegate
 import com.carterchen247.multiplepartprogressbar.util.ClockWiseAngle
 import com.carterchen247.multiplepartprogressbar.util.ProgressColorProvider
 import kotlin.math.cos
@@ -14,14 +14,14 @@ import kotlin.math.sin
 
 class ProgressIconPainter(
     private val context: Context,
-    private val delegate: MultipleProgressbarViewDelegate
+    private val delegate: MultiplePartProgressbarDelegate
 ) : Painter() {
 
     private val iconBitmap by lazy {
-        AppCompatResources.getDrawable(
-            context,
-            delegate.getIconResource()
-        )?.toBitmap()
+        delegate.getIconResource().let { resourceId ->
+            if (resourceId == 0) return@lazy null
+            AppCompatResources.getDrawable(context, delegate.getIconResource())?.toBitmap()
+        }
     }
     private val iconBackgroundPaint by lazy { Paint().apply { isAntiAlias = true } }
     private val progressColorProvider by lazy { ProgressColorProvider(delegate.getColorProgressConfig()) }

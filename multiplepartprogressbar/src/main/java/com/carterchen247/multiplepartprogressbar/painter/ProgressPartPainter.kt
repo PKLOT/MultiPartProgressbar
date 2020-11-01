@@ -1,14 +1,14 @@
 package com.carterchen247.multiplepartprogressbar.painter
 
 import android.graphics.*
-import com.carterchen247.multiplepartprogressbar.MultipleProgressbarView
+import com.carterchen247.multiplepartprogressbar.MultiplePartProgressbarDelegate
 import com.carterchen247.multiplepartprogressbar.part.ProgressPartColor
 import com.carterchen247.multiplepartprogressbar.util.ClockWiseAngle
 import kotlin.math.atan2
 import kotlin.math.max
 import kotlin.math.min
 
-class ProgressPartPainter(private val delegate: MultipleProgressbarView) : Painter() {
+class ProgressPartPainter(private val delegate: MultiplePartProgressbarDelegate) : Painter() {
 
     private val progressColors by lazy {
         val colorProgressConfig = delegate.getColorProgressConfig()
