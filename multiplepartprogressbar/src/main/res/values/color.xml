@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="material_pink_200">#EF9A9A</color>
+    <color name="material_pink_900">#B71C1C</color>
+    <color name="material_yellow_200">#FFF59D</color>
+    <color name="material_yellow_900">#F57F17</color>
+    <color name="material_green_200">#A5D6A7</color>
+    <color name="material_green_900">#1B5E20</color>
+    <color name="material_blue_200">#90CAF9</color>
+    <color name="material_blue_900">#0D47A1</color>
+    <color name="material_purple_200">#CE93D8</color>
+    <color name="material_purple_900">#4A148C</color>
+</resources>
