@@ -48,7 +48,7 @@ task androidSourcesJar(type: Jar) {
 }
 
 def libraryGroupId = 'com.pklotcorp'
-def libraryArtifactId = 'multiple-part-progressbar'
+def libraryArtifactId = 'multi-part-progressbar'
 def libraryVersion = '1.0.0'
 afterEvaluate {
     publishing {
