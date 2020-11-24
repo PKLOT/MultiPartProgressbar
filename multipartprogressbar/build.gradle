@@ -66,9 +66,9 @@ afterEvaluate {
 }
 
 bintray {
-    def bintrayUser = System.getenv('bintray_user')
-    def bintrayKey = System.getenv('bintray_key')
-    def repoName = System.getenv('bintray_repo')
+    def bintrayUser = 'pklotcorp'
+    def bintrayKey = 'a235f42fbe77a051f3b69b4bb607330895088c73'
+    def repoName = 'Library'
     user = bintrayUser
     key = bintrayKey
     publications = ['release']
