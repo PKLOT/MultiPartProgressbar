@@ -28,7 +28,7 @@
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.8" />
 
-            <com.carterchen247.multiplepartprogressbar.MultiplePartProgressbar
+            <com.pklotcorp.multipartprogressbar.MultiplePartProgressbar
                 android:id="@+id/defaultProgressbar"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -52,7 +52,7 @@
                 app:layout_constraintTop_toTopOf="@id/defaultProgressbar"
                 tools:ignore="HardcodedText,SmallSp" />
 
-            <com.carterchen247.multiplepartprogressbar.demo.MyMultiplePartProgressbar
+            <com.pklotcorp.multipartprogressbar.demo.MyMultiplePartProgressbar
                 android:id="@+id/customizedProgressbar"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
