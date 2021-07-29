@@ -5,7 +5,7 @@ A progressbar which contains different parts of progress.
 <img src="./preview/preview.gif" alt="preview" title="preview" width="300" height="300" align="right"/>
 
 ## Download
-![](https://img.shields.io/bintray/v/pklotcorp/Library/multi-part-progressbar?label=version) 
+![](https://img.shields.io/maven-central/v/com.pklotcorp/multi-part-progressbar)
 ```groovy
 implementation 'com.pklotcorp:multi-part-progressbar:$version'
 ```
